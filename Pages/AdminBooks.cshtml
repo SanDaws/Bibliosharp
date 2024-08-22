@@ -1,0 +1,31 @@
+@page
+@model Bibliosharp.Pages.AdminBooks
+@{
+    ViewData["Title"] = "AdminBooks";
+}
+
+@* <h1>@ViewData["Title"]</h1> *@
+
+<div>
+    <div class="container-fluid form-congtainer">
+        <form class="d-flex form-congtainer-items" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search <i class="bi bi-search"></i></button>
+            <button class="btn btn-success">New Book <i class="bi bi-plus-square-fill"></i></button>
+        </form>
+    </div>
+    <div class="generalContainer">
+        <nav class="navbar bg-body-tertiary generalContainer-item">
+            <div class="container-fluid">
+                <img src="~/lib/logo.jpeg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                <p>Name of book</p>
+                <button class="btn btn-primary btn-circle"><i class="bi bi-bag"></i></button>
+                <button class="btn btn-warning btn-circle"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-circle"><i class="bi bi-trash-fill"></i></button>
+            </div>
+        </nav>
+         
+        
+    </div>
+
+</div>
