@@ -82,12 +82,6 @@ body {
   gap: 1rem;
 }
 
-/* footer {
-  background-color: #f8f9fa; Puedes cambiar esto al color que prefieras
-  padding: 1rem 0;
-  text-align: center;
-} 
-*/
 
 footer {
   position: fixed;
@@ -97,5 +91,4 @@ footer {
   background-color: #131d2f; 
   text-align: center;
   padding: 1rem 0;
-  border-top: 1px solid #e7e7e7;
 }
