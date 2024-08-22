@@ -11,7 +11,8 @@
         <form class="d-flex form-congtainer-items" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-success" type="submit">Search <i class="bi bi-search"></i></button>
-            <button class="btn btn-success">New Book <i class="bi bi-plus-square-fill"></i></button>
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#modalBook">New Book <i
+                    class="bi bi-plus-square-fill"></i></button>
         </form>
     </div>
     <div class="generalContainer">
@@ -51,9 +52,44 @@
                 <button class="btn btn-danger btn-circle"><i class="bi bi-trash-fill"></i></button>
             </div>
         </nav>
-        
-         
-        
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add book</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="container register-container">
+                        <div class="mb-2">
+                            <label for="title" class="form-label">title</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="mb-2">
+                            <label for="author" class="form-label">author</label>
+                            <input type="text" class="form-control" id="author">
+                        </div>
+                        <div class="mb-2">
+                            <label for="isbn" class="form-label">isbn</label>
+                            <input type="number" class="form-control" id="isbn">
+                        </div>
+                        <div class="mb-2">
+                            <label for="category" class="form-label">category</label>
+                            <input type="text" class="form-control" id="category">
+                        </div>
+                        <div class="mb-2 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Available</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modalBook">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
