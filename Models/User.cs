@@ -19,7 +19,7 @@ namespace Bibliosharp.Models
         public User(string firstName, string secondName, string firstLastName, string secondLastName,string addres, string phone,string email, string password ,Rol Rol,DocumentType DocumentType ) 
         : base(firstName, secondName, firstLastName, secondLastName)
         {
-            this.Rol= Rol.Id;
+            //this.Rol= Rol.Id;
             this.DocumentType= DocumentType.Id;
             Address=addres;
             Phone=phone;
