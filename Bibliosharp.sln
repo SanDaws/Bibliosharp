@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
+
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliosharp", "Bibliosharp.csproj", "{56E07CB9-C6D5-4A01-8288-833A63D44292}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+
 		{56E07CB9-C6D5-4A01-8288-833A63D44292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56E07CB9-C6D5-4A01-8288-833A63D44292}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E07CB9-C6D5-4A01-8288-833A63D44292}.Release|Any CPU.ActiveCfg = Release|Any CPU
