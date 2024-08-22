@@ -12,11 +12,12 @@ namespace Bibliosharp.Models
         public string Abreviation { get; set; }
 
         public DocumentType(string name, string abreviation)
-    {
-        Name = name;
-       Abreviation = abreviation;
+        {
+            Name = name;
+            Abreviation = abreviation;
+        }
     }
-}
-    }
+
+
 
     
