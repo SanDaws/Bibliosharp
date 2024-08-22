@@ -6,6 +6,13 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        //dbconection
+        builder.Services.AddDbContext<DbFighters>(options=> 
+        options.UseMySql(
+            builder.Configuration.GetConnectionString("fightersDb"),
+        ServerVersion.Parse("8.0.20-mysql")
+        ));
+
         // Add services to the container.
         builder.Services.AddRazorPages();
 
