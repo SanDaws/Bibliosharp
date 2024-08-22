@@ -1,3 +1,6 @@
+using Bibliosharp.Database;
+using Microsoft.EntityFrameworkCore;
+
 namespace Bibliosharp;
 
 public class Program
@@ -7,9 +10,9 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         //dbconection
-        builder.Services.AddDbContext<DbFighters>(options=> 
+        builder.Services.AddDbContext<DbBibliosharp>(options=> 
         options.UseMySql(
-            builder.Configuration.GetConnectionString("fightersDb"),
+            builder.Configuration.GetConnectionString("BibliosharpDb"),
         ServerVersion.Parse("8.0.20-mysql")
         ));
 
