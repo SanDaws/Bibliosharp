@@ -5,14 +5,13 @@ using System.Threading.Tasks;
 
 namespace Bibliosharp.Models;
 
-    public class Category
+public class Category
+{
+    public int Id { get; set; }
+    public string CategoryName { get; set; }
+
+    public Category(string cathegoryName)
     {
-        public int Id { get; set; }
-        public string RolName { get; set; }
-
-        public Category(string rolName)
-        {
-            RolName= rolName;
-        }
+        CategoryName = cathegoryName;
     }
-
+}

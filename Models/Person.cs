@@ -9,7 +9,7 @@ namespace Bibliosharp.Models
     public abstract class Person
     {
         
-        public int id;
+        public int Id;
         public string FirstName;
         public string SecondName;
         public string FirstLastName;
