@@ -7,10 +7,10 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <form class="container register-container">
+    <form asp-controller="User" asp-action="GuardarUsuario" class="container register-container">
         <div class="mb-2">
             <label for="name" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" name="FirstName">
         </div>
         <div class="mb-2">
             <label for="Sname" class="form-label">Second Name</label>
@@ -24,13 +24,18 @@
             <label for="SLname" class="form-label">Second Last Name</label>
             <input type="text" class="form-control" id="SLname">
         </div>
-         <div class="mb-2">
+        <div class="mb-2">
             <label for="rol" class="form-label">Rol</label>
             <input type="text" class="form-control" id="rol">
         </div>
         <div class="mb-2">
             <label for="DType" class="form-label">Document Type</label>
-            <input type="text" class="form-control" id="DType">
+            <select class="form-control" id="documentType" name="documentType">
+                <option value="1">Citizenship card</option>
+                <option value="2">Passport</option>
+                <option value="3">ID Card</option>
+                <option value="4">Driver's License</option>
+            </select>
         </div>
         <div class="mb-2">
             <label for="DNumber" class="form-label">Document Number</label>
@@ -44,7 +49,7 @@
             <label for="Phone" class="form-label">Phone</label>
             <input type="number" class="form-control" id="Phone">
         </div>
-         <div class="mb-2">
+        <div class="mb-2">
             <label for="Email" class="form-label">Email</label>
             <input type="email" class="form-control" id="Email">
         </div>
@@ -59,4 +64,22 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
+</div>
+
+
+<div class="container mt-5">
+    <h2>Select Document Type</h2>
+    <form>
+        <div class="form-group">
+            <label for="documentType">Document Type</label>
+            <select class="form-control" id="documentType" name="documentType">
+                <option value="passport">Passport</option>
+                <option value="idCard">ID Card</option>
+                <option value="driverLicense">Driver's License</option>
+                <option value="birthCertificate">Birth Certificate</option>
+                <option value="socialSecurity">Social Security</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
