@@ -9,8 +9,8 @@ public class Rol
 {
     public int Id { get; set; }
     public string RolName { get; set; }
-    public Rol(string RolName)
+    public Rol(string rolName)
     {
-
+        RolName = rolName;
     }
 }
